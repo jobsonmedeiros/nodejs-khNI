@@ -27,4 +27,9 @@ rotas.get('/usuario', verMeuPerfil)
 // de acordo com a validação do token de autenticação.
 rotas.put('/usuario', editarPerfil)
 
+//Essa é a rota que permite o usuário logado cadastrar um novo produto no sistema.
+rotas.post('/produto')
+
+
+
 module.exports = rotas
