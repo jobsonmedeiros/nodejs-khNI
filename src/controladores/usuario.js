@@ -2,7 +2,7 @@ const knex = require("../dados/conexao");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const print = (a) => console.log(a);
-// listagem de todas as categorias
+
 const cadastrarUsuario = async (req, res) => {
   try {
     print("Tentando registrar novo usuário...");
@@ -97,4 +97,4 @@ const editarPerfil = async (req, res) => {
   }
 };
 
-module.exports = { cadastrarUsuario, verMeuPerfil, editarPerfil, editarPerfil };
+module.exports = { cadastrarUsuario, verMeuPerfil, editarPerfil };

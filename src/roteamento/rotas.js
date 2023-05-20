@@ -3,6 +3,7 @@ const { listarCategorias } = require("../controladores/categoria");
 const {cadastrarUsuario, verMeuPerfil, editarPerfil} = require("../controladores/usuario");
 const login = require("../controladores/login");
 const verificarAutenticacao = require("../intermediarios/autenticador");
+const cadastrarProduto = require("../controladores/produto");
 
 const rotas = express.Router();
 
@@ -28,7 +29,7 @@ rotas.get('/usuario', verMeuPerfil)
 rotas.put('/usuario', editarPerfil)
 
 //Essa é a rota que permite o usuário logado cadastrar um novo produto no sistema.
-rotas.post('/produto')
+rotas.post('/produto', cadastrarProduto)
 
 
 
